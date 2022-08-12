@@ -1,26 +1,31 @@
 html {
   scroll-behavior: smooth;
+  overflow: scroll;
+  width:100%;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #203647;
+  width:100%;
 }
 
 html,body{
   overflow:auto;
   }
+
 * {
   box-sizing: border-box;
 }
 /*footer*/
 
 #footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 60px;   /* Height of the footer */
-  background: #6cf;
+  position: absolute;
+  top: 100%;
+  width:100%; 
+  height:400px;
+  z-index: 100;
+  margin-top: 200px;
 }
 
 
@@ -83,6 +88,13 @@ body {font-family: "Segoe UI", Arial, Helvetica, Sans Serif;}
   position: absolute;
   bottom: 45%;
   left: 1%;
+}
+
+#media1 { 
+  position: absolute;
+  top:0%;
+  left: 120%;
+  z-index: 1;
 }
 
 /* Full-width input fields */
