@@ -1,0 +1,29 @@
+ nav {
+	 position: fixed;
+	 width: 100%;
+	 height: 70px;
+	 background-color: transparent;
+	 display: flex;
+	 align-items: center;
+	 transition: all 0.2s ease-in-out;
+}
+ nav.onScroll {
+	 box-shadow: 0 0 10px #aaa;
+	 background-color: #fff;
+}
+nav.onScroll ul li {
+	 color: #10b761;
+}
+ nav ul {
+	 margin-left: 3em;
+	 width: 25%;
+	 display: flex;
+	 justify-content: space-between;
+}
+ nav ul li {
+	 cursor: pointer;
+	 font-weight: 600;
+	 list-style-type: none;
+	 color: white;
+}
+ 
