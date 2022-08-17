@@ -22,22 +22,25 @@ body {
   padding-left: 10px; 
 } */
 
-.flex-container {
- display: flex;
+.grid-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+grid-template-rows: repeat(8,320px);
+gap: 5px;
 }
 
-.flex-child {
-  flex: 1;
-  border: 2px solid yellow;
-}  
+.j1 {
+  grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3;
+}
 
-.flex-child:first-child {
-  margin-right: 20px;
-} 
+
 /*footer*/
 
 footer { 
-  margin-top: 500px;
+  margin-top: 300px;
   width: 100%;
 }
 
@@ -81,7 +84,6 @@ img {
   max-width: 65%;
   height: auto;
   position: relative;
-
 }
 
 
@@ -89,10 +91,8 @@ img {
 /*Modals jumbotron and ish */ 
 
 #j1{ 
-  position: relative;
   height: auto;
-  max-width: 60%;
-
+  max-width: 40%;
 }
 
 
@@ -102,7 +102,7 @@ img {
   max-width: 100%;
 }
 /*Jumbotron 2 */ 
-.jumbotron #j2{ 
+ #j2{ 
     position: relative;
 }
 
