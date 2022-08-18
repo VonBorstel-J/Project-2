@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="/public/css/scroll_nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/1097c61675.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Home</title>
   </head>
 <!--Main Navigation-->
-        <header>
+        <header >
           <div class="navbar">
             <div class="navbar" id="navBar">
-              <nav class="topnav container" id="myTopnav">
+              <div class="navbar-grid">
+              <div class="shippingBannerP">
+                <p id="shippingBannerC">Free Shipping for orders over 100$</p>
+              </div>
+              <nav class="topnav container navGrid" id="myTopnav">
                 <a class="navbar-brand" href="#">
                   <img src="/public/img/img_avatar.png" alt="Avatar Logo" style="width: 50px;height: 50px;" class="rounded-circle z-depth-6">
                 </a>
@@ -28,19 +33,20 @@
               </nav>
             </div>
           </div>
-        </header>
+        </div>
+    </header>
 
 
 <body>
       <main>
         <div class="grid-container">
           <div id="j1" class="j1"> 
-          <div class="jumbotron jumbotron-fluid bg-dark text-white">
+          <div class="jumbotron jumbotron-fluid bg-dark text-white" style="border-radius: 10px;">
             <div class="container-fluid">
               <h1 id="signU" class="display-3">Sign up/Sign In</h1>
               <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur ad odio harum, id, reprehenderit similique ipsum maiores inventore tempora adipisci soluta, nemo accusamus est natus! Velit sit magni est.</p>
               <hr class="my-4">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut natus at, veniam doloribus animi aliquid. Consectetur quas autem nulla dolore accusantium maiores at dicta quos eaque nemo, voluptate in.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut natus at, veniam doloribus animi aliquid. Consectetur quas autem nulla dolore accusantium maiores at dicta quos eaque nemo, voluptate in. eniam doloribus animi aliquid. Consectetur quas autem nulla dolore accusantium maiores at dicta quos eaque nemo, voluptate in.</p>
               <p class="lead"></p>
               <!---Modal for btn 1-->
               <div id="btn1">
@@ -107,18 +113,19 @@
             </div>
           </div>
         </div>
-        <div class="j2">
           <!--image for jumbotron-->
-          <div id="media1">
+          <div id="shoppingcart" class="img1">
             <img src="/public/img/Shopping-cart.jpg" class="img-responsive" style="border-radius: 10px;">
           </div>
-          <section id="jumbo2">
-            <div class="jumbotron jumbotron-fluid bg-dark text-white" id="j2">
-              <h1 class="display-1">Lorem Ipsum</h1>
-              <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur ad odio harum, id, reprehenderit similique ipsum maiores inventore tempora adipisci soluta, nemo accusamus est natus! Velit sit magni est.</p>
-              <hr class="my-4">
-              <a href="url">Learn More</a>
-              <i class="fa-solid fa-arrow-right" style="color:white; "></i>
+          <section id="jumbo2" class="j2">
+            <div class="jumbotron jumbotron-fluid bg-dark text-white" style="border-radius: 10px;" id="j2">
+              <div class="container-fluid ">
+              <h1 id="signU" class="display-1">Lorem Ipsum</h1>
+              <p class="lead">Lorem, eniam doloribus animi aliquid. Consectetur quas autem nulla dolore accusantium maiores at dicta quos eaque nemo, voluptate in. ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur ad odio harum, id, reprehenderit similique ipsum maiores inventore tempora adipisci soluta, nemo accusamus est natus! Velit sit magni est.</p>
+              <hr class="my-3">
+              <a href="url" style="font-size:25px;">Learn More</a>
+              <i class="fa-solid fa-arrow-right fa-lg" style="padding-left: 10px ;"></i>
+            </div>
           </section>
         </div>
         </main>

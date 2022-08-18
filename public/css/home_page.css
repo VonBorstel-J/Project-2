@@ -10,18 +10,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #203647;
   height: 100%;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
 
-/* .wrapper1{ 
-  padding-top: 200px;
-  margin-right: auto; 
-  margin-left: auto; 
-  max-width:1160px; 
-  padding-right: 10px; 
-  padding-left: 10px; 
-} */
-
+/* Grid for whole site */
 .grid-container {
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
@@ -30,10 +33,38 @@ gap: 5px;
 }
 
 .j1 {
-  grid-column-start: 2;
-  grid-column-end: five;
-  grid-row-start: row1-start;
-  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  align-self: start;
+  margin-left: 100px;
+  
+}
+
+.j2 { 
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  align-self: start;
+  justify-self: end;
+  margin-left: 200px;
+}
+
+#j2{ 
+  height: auto;
+  max-width: 90%;
+  padding-left: 20px;
+}
+
+.img1 { 
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  justify-self: end;
+  margin-right: 200px;
 }
 
 
@@ -44,6 +75,14 @@ footer {
   width: 100%;
 }
 
+/* Nav Bar Grid Setting */ 
+
+.navbar-grid { 
+  display: grid;
+  height: 100px;
+  grid-template-columns: repeat(10, minmax(320px,1fr));
+  grid-template-rows: auto auto auto;
+}
 
 /*Headers*/
 #signU {
@@ -70,42 +109,45 @@ header {
 }
 body {font-family: "Segoe UI", Arial, Helvetica, Sans Serif;} 
 
+.shippingBannerP { 
+  background-color: black;
+  grid-column: span 10;
+  width: auto;
+  
+}
+
+.navGrid { 
+  grid-column: span 10;
+  width: 100%;
+  
+}
+
+
+
+
+#shippingBannerC { 
+  color: #f1f1f1;
+}
+
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Styling for all images */ 
 
-img {
+/* img {
   max-width: 100%;
   max-height: 100%;
-}
+} */
 
-#media1 { 
-  max-width: 65%;
+#shoppingcart { 
+  max-width: 90%;
   height: auto;
   position: relative;
 }
 
 
 
-/*Modals jumbotron and ish */ 
-
-#j1{ 
-  height: auto;
-  max-width: 40%;
-}
-
-
-
-.jumbotron{
-  max-height:100%;
-  max-width: 100%;
-}
-/*Jumbotron 2 */ 
- #j2{ 
-    position: relative;
-}
-
+/*input css*/ 
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
