@@ -8,6 +8,10 @@ const basic = auth.basic ({
     file: path.join(__dirname, '../users.htpasswd'),
 });
 
+
+
+//This is how we will register new users and store it within a MongoDB Database 
+
 const { check, validationResult } = require('express-validator'); 
 const Registration = mongoose.model('Registration'); 
 

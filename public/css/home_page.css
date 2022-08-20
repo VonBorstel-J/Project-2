@@ -6,9 +6,15 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #203647;
+  background-color: #fefae0;
   height: 100%;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
@@ -39,8 +45,8 @@ gap: 5px;
   grid-row-end: 2;
   align-self: start;
   margin-left: 100px;
-  
 }
+
 
 .j2 { 
   grid-column-start: 3;
@@ -67,22 +73,18 @@ gap: 5px;
   margin-right: 200px;
 }
 
-
 /*footer*/
 
 footer { 
   margin-top: 300px;
   width: 100%;
+  background-color: #dda15e!important;
 }
 
-/* Nav Bar Grid Setting */ 
-
-.navbar-grid { 
-  display: grid;
-  height: 100px;
-  grid-template-columns: repeat(10, minmax(320px,1fr));
-  grid-template-rows: auto auto auto;
+.container { 
+  color: black;
 }
+
 
 /*Headers*/
 #signU {
@@ -109,35 +111,15 @@ header {
 }
 body {font-family: "Segoe UI", Arial, Helvetica, Sans Serif;} 
 
-.shippingBannerP { 
-  background-color: black;
-  grid-column: span 10;
-  width: auto;
-  
-}
-
-.navGrid { 
-  grid-column: span 10;
-  width: 100%;
-  
-}
-
-
-
-
-#shippingBannerC { 
-  color: #f1f1f1;
-}
-
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /* Styling for all images */ 
 
-/* img {
+img {
   max-width: 100%;
   max-height: 100%;
-} */
+}
 
 #shoppingcart { 
   max-width: 90%;
@@ -332,3 +314,216 @@ span.psw {
     width: 100%;
   }
 }
+
+/* Site Wide Media Queries */ 
+
+/* Laptops */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+
+/* Ipad's and Tablet's */
+
+/* Portrait and Landscape */
+/* @media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+
+} */
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {  
+  .navbar{ 
+    max-width: 100%;
+  }
+  
+  
+  .navbar {   
+    width: 100%;
+    max-width: 1440px;
+    min-width: 601px;
+  }
+
+  .shippingBannerP { 
+    max-width: 1440px;
+  }
+
+  .footer { 
+    width: 1441px
+  }
+
+  .row { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+
+} 
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {  
+  .navbar {   
+  flex-direction: column;
+}
+
+.footer { 
+  width: 100%
+}
+
+.row { 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+} 
+
+ */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  .navbar {   
+    flex-direction: column;
+  }
+
+  .footer { 
+    width: 1156px
+  }
+
+  .row { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+
+
+}  */
+
+
+
+@media screen and (min-width: 600px) {
+  
+  .navbar{ 
+    max-width: 100%;
+  }
+  
+  
+  .navbar {   
+    width: 100%;
+    max-width: 1440px;
+    min-width: 601px;
+  }
+
+  .shippingBannerP { 
+    max-width: 1440px;
+  }
+
+  .footer { 
+    width: 1441px
+  }
+
+  .row { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+
+} 
+
+
+@media screen and (max-width: 600px) {
+  
+
+  .navbar {   
+    max-width: 600px;
+    min-width: 836px;
+  }
+
+
+  .shippingBannerP { 
+    max-width: 600px;
+    min-width: 836px;
+  }
+
+
+
+  .footer { 
+    max-width: 600px;
+    min-width: 836px;
+  }
+
+  .row { 
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+
+}
+
+
+

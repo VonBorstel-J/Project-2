@@ -12,10 +12,12 @@
     <script src="https://kit.fontawesome.com/1097c61675.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <title>Home</title>
+    <link rel="shortcut icon" href="/public/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/public/img/favicon.ico" type="image/x-icon">
   </head>
+
 <!--Main Navigation-->
         <header >
-          <div class="navbar">
             <div class="navbar" id="navBar">
               <div class="navbar-grid">
               <div class="shippingBannerP">
@@ -24,16 +26,28 @@
               <nav class="topnav container navGrid" id="myTopnav">
                 <a class="navbar-brand" href="#">
                   <img src="/public/img/img_avatar.png" alt="Avatar Logo" style="width: 50px;height: 50px;" class="rounded-circle z-depth-6">
+                  <h1 class="GIGA text-black">GIGACOMMERCE</h1>
                 </a>
-                <span style="font-size:larger; position:relative; right:10%;">GIGACOMMERCE</span>
-                <a class="nav-link" aria-current="page" href="/public/html/index.html">Home</a>
-                <a class="nav-link" href="/public/html/Product.html" rel="nofollow" target="_blank">Products</a>
-                <a class="nav-link" href="/public/html/Contact.html">Contact Us</a>
-                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="nav-links navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="/public/html/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/public/html/Product.html" rel="nofollow" target="_blank">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/public/html/Contact.html">Contact Us</a>
+                    </li>    
+                  </ul>
+                </div>
+              </div>
               </nav>
             </div>
           </div>
-        </div>
     </header>
 
 
@@ -41,7 +55,7 @@
       <main>
         <div class="grid-container">
           <div id="j1" class="j1"> 
-          <div class="jumbotron jumbotron-fluid bg-dark text-white" style="border-radius: 10px;">
+          <div class="jumbotron jumbotron-fluid bg-dark text-white" style="border-radius: 10px;  background-color: #283618!important;">
             <div class="container-fluid">
               <h1 id="signU" class="display-3">Sign up/Sign In</h1>
               <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur ad odio harum, id, reprehenderit similique ipsum maiores inventore tempora adipisci soluta, nemo accusamus est natus! Velit sit magni est.</p>
@@ -118,7 +132,7 @@
             <img src="/public/img/Shopping-cart.jpg" class="img-responsive" style="border-radius: 10px;">
           </div>
           <section id="jumbo2" class="j2">
-            <div class="jumbotron jumbotron-fluid bg-dark text-white" style="border-radius: 10px;" id="j2">
+            <div class="jumbotron jumbotron-fluid bg-dark text-white" style="border-radius: 10px; background-color: #606C38!important;" id="j2">
               <div class="container-fluid ">
               <h1 id="signU" class="display-1">Lorem Ipsum</h1>
               <p class="lead">Lorem, eniam doloribus animi aliquid. Consectetur quas autem nulla dolore accusantium maiores at dicta quos eaque nemo, voluptate in. ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur ad odio harum, id, reprehenderit similique ipsum maiores inventore tempora adipisci soluta, nemo accusamus est natus! Velit sit magni est.</p>
@@ -135,12 +149,11 @@
 
 
 
-      <footer class="bg-light">
-        <div class="container py-5">
+      <footer class=" footer ">
+        <div class="containerF w3-container py-5">
           <div class="row py-4">
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-              <img src="img/logo.png" alt="" width="180" class="mb-3">
-              <p class="font-italic text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+              <p class="font-italic ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
               <ul class="list-inline mt-4">
                 <li class="list-inline-item">
                   <a href="#" target="_blank" title="twitter">
@@ -173,16 +186,16 @@
               <h6 class="text-uppercase font-weight-bold mb-4">Shop</h6>
               <ul class="list-unstyled mb-0">
                 <li class="mb-2">
-                  <a href="#" class="text-muted">Cool Stuff</a>
+                  <a href="#" class="">Cool Stuff</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-muted">Cooler Stuff</a>
+                  <a href="#" class="">Cooler Stuff</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-muted">Coolish Stuff</a>
+                  <a href="#" class="">Coolish Stuff</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-muted">The Coolest Stuff</a>
+                  <a href="#" class="">The Coolest Stuff</a>
                 </li>
               </ul>
             </div>
@@ -190,22 +203,22 @@
               <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
               <ul class="list-unstyled mb-0">
                 <li class="mb-2">
-                  <a href="#" class="text-muted">Login</a>
+                  <a href="#" class="">Login</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-muted">Register</a>
+                  <a href="#" class="">Register</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-muted">Wishlist</a>
+                  <a href="#" class="">Wishlist</a>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="text-muted">Our Products</a>
+                  <a href="#" class="">Our Products</a>
                 </li>
               </ul>
             </div>
             <div class="col-lg-4 col-md-6 mb-lg-0">
               <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
-              <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
+              <p class=" mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
               <div class="p-1 rounded border">
                 <div class="input-group">
                   <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1" class="form-control border-0 shadow-0">
@@ -222,7 +235,7 @@
         <!-- Copyrights -->
         <div class="bg-light">
           <div class="container text-center">
-            <p class="text-muted mb-0 py-2">© This site is for mock purposes only*****</p>
+            <p class=" mb-0 py-2">© This site is for display purposes only*****</p>
           </div>
         </div>
 </footer>

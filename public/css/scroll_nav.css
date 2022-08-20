@@ -16,10 +16,8 @@
 }
 
 .topnav a {
-    float: right;
-    display: block;
+    display: inline-block;
     color: #f2f2f2;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
@@ -40,8 +38,7 @@
   }
 
   .navbar {
-    background-color: #157293;
-    width: 100%;
+    background-color: #dda15e;
     margin-right: auto;
     margin-left: auto;
     position: fixed;
@@ -50,4 +47,59 @@
     z-index: 100;
     box-shadow: 0px 3px 5px rgba(0 0 0 /10%);
     padding: 0;
+}
+
+.navbar-nav { 
+  flex-direction: row;
+}
+
+.nav-links { 
+  display:flex;
+  flex-flow: row;
+  align-items: baseline;
+  float: right;
+  padding-top: 25px;
+  margin-right: 25px;
+}
+
+.GIGA { 
+  display: inline-block;
+  width: min-content;
+  padding-left: 20px;
+  font-size:  40px;
+}
+
+/*Grid System*/ 
+
+.navbar-grid { 
+  display: grid;
+  grid-template-columns: repeat(10, minmax(320px,1fr));
+  grid-template-rows: auto auto auto;
+}
+
+
+.shippingBannerP { 
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: -3;
+  text-align: center;
+  width:auto;
+}
+
+.navGrid { 
+  grid-column-start: 1;
+  grid-column-end: -3;
+}
+
+
+#shippingBannerC { 
+  color: #f1f1f1;
+}
+
+
+#myTopnav { 
+  padding: 10px;
+  width: 100%;
+  height: max-content;
+  overflow: visible;
 }
