@@ -58,7 +58,6 @@ padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-left: 45%; */
 }
 
 .nav-item {
@@ -178,12 +177,7 @@ padding: 1rem 1.5rem;
     transform: translateY(-8px) rotate(-45deg);
 }
 
-
-
-
 }
-
-
 
 
 

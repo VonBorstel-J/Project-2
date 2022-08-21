@@ -405,19 +405,28 @@ span.psw {
 
 } */
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {    
+
+
+@media only screen and (min-width: 1440px) {    
   .navbar {   
-    max-width: 1200px;
     min-width: 992px;
+    
+  }
+
+  .navbar>.container, .navbar>.container-fluid{ 
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .nav-links { 
+    margin-left: 45%;
   }
 
   .shippingBannerP { 
-    max-width: 1200px;
     min-width: 992px;
   }
 
-  .footer { 
-    max-width: 1200px;
+  .footer {
     min-width: 992px;
   }
 
@@ -426,9 +435,233 @@ span.psw {
     flex-wrap: wrap;
     align-items: center;
   }
+  .j1 { 
+    padding: 1rem;
+    grid-column: 1 ;
+    grid-row: 3 / 4;
+    align-self: start;
+    margin: auto;
+  }
+
+  .img1 { 
+    grid-column: 2;
+    grid-row: 3 / 6;
+    align-self: start;
+    margin-left: 0px;
+  }
+
+  #shoppingC{ 
+    width: 1000px;
+    height: 900px;
+  }
+
+  .j2 { 
+    padding: 1rem;
+    grid-column: 2;
+    grid-row: 6 / 8;
+    margin-right: 40px;
+  }
+
+  #j2 { 
+    max-width: max-content;
+    padding: 0;
+  }
+
+  .container-fluid { 
+    padding-bottom: 40px;
+  }
+
+#logoPNG { 
+  padding: 1rem;
+  grid-column: 1;
+  grid-row: 4 / 8;
+  align-self: start;
+}
 
 
-} 
+#imgLogoPNG { 
+  width: 900px!important;
+  height: 700px; 
+}
+
+
+#partners { 
+  grid-column: 1 / 3;
+  grid-row: 8 / 9;
+}
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {    
+
+  .navbar>.container, .navbar>.container-fluid{ 
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .row { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .j1 { 
+    padding: 1rem;
+    grid-column: 1 ;
+    grid-row: 3 / 4;
+    align-self: start;
+    margin: auto;
+  }
+
+  .img1 { 
+    grid-column: 2;
+    grid-row: 3 / 4;
+    align-self: end;
+    margin-left: 0px;
+  }
+
+  #shoppingC{ 
+    width: 1000px;
+    height: 800px;
+  }
+
+
+  .j2 { 
+    padding: 1rem;
+    grid-column: 2;
+    grid-row: 4 / 8;
+    align-self: end;
+    margin-right: 35px;
+    margin-left: 0;
+  }
+
+  #j2 { 
+    max-width: max-content;
+    padding: 0;
+  }
+
+  .container-fluid { 
+    padding-bottom: 40px;
+    padding-left: 33px;
+  }
+
+#logoPNG { 
+  padding: 1rem;
+  grid-column: 1;
+  grid-row: 4 / 8;
+  align-self: start;
+}
+
+
+#imgLogoPNG { 
+  width:1000px!important;
+  height: 551px; 
+}
+
+
+#partners { 
+  grid-column: 1 / 3;
+  grid-row: 8 / 9;
+}
+
+}
+
+
+
+
+
+
+@media only screen and (min-width: 992px) and (max-width: 1024) {    
+  .navbar {   
+    min-width: 992px;
+    
+  }
+
+  .navbar>.container, .navbar>.container-fluid{ 
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .nav-links { 
+    margin-left: 45%;
+  }
+
+  .shippingBannerP { 
+    min-width: 992px;
+  }
+
+  .footer {
+    min-width: 992px;
+  }
+
+  .row { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .j1 { 
+    padding: 1rem;
+    grid-column: 1 ;
+    grid-row: 3 / 5;
+    align-self: start;
+    margin: auto;
+  }
+
+  .img1 { 
+    grid-column: 1;
+    grid-row: 5 / 7;
+    align-self: end;
+    margin-left: 0px;
+  }
+
+  #shoppingC{ 
+    width: 1000px;
+    height: 900px;
+  }
+
+
+  .j2 { 
+    padding: 1rem;
+    grid-column: 2;
+    grid-row: 4 / 8;
+    align-self: end;
+    margin-right: 35px;
+    margin-left: 0;
+  }
+
+  #j2 { 
+    max-width: max-content;
+    padding: 0;
+  }
+
+  .container-fluid { 
+    padding-bottom: 40px;
+    padding-left: 33px;
+  }
+
+#logoPNG { 
+  padding: 1rem;
+  grid-column: 1;
+  grid-row: 4 / 8;
+  align-self: start;
+}
+
+
+#imgLogoPNG { 
+  width:1000px!important;
+  height: 551px; 
+}
+
+
+#partners { 
+  grid-column: 1 / 3;
+  grid-row: 8 / 9;
+}
+
+}
 
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -452,6 +685,7 @@ span.psw {
   .footer { 
     max-width: 992px;
     min-width: 768px;
+    margin-top: 0px;
   }
 
   .row { 
@@ -459,27 +693,84 @@ span.psw {
     flex-wrap: wrap;
     align-items: center;
   }
+  .j1 { 
+    padding: 1rem;
+    grid-column: 1 / 3 ;
+    grid-row: 3;
+    align-self: start;
+    margin: auto;
+  }
+
+  .img1 { 
+    grid-column: 1 / 3;
+    grid-row: 4;
+    align-self: end;
+    margin-left: 0px;
+  }
+
+  #shoppingC{ 
+    width: 1000px;
+    height: 900px;
+  }
+
+
+  .j2 { 
+    padding: 1rem;
+    grid-column: 1 / 3;
+    grid-row: 5;
+    align-self: end;
+    margin-right: 35px;
+    margin-left: 28px;
+  }
+
+  #j2 { 
+    max-width: max-content;
+    padding: 0;
+  }
+
+  .container-fluid { 
+    padding-bottom: 40px;
+    padding-left: 33px;
+  }
+
+#logoPNG { 
+  padding: 1rem;
+  grid-column: 1 / 3;
+  grid-row: 6;
+  align-self: start;
+}
+
+
+#imgLogoPNG { 
+  width:1000px!important;
+  height: 551px; 
+}
+
+
+#partners { 
+  grid-column: 1 / 3;
+  grid-row: 7;
+}
 
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
 
   .navbar {   
     width: 100%;
-    max-width: 768px;
-    min-width: 601px;
-  }
-
-  .nav-links { 
-    max-width: 768px; 
-    min-width: 601px;    
   }
 
 
   .shippingBannerP { 
-    max-width: 768px;
+    width: 100%;
   }
+
+  #shippingBannerC { 
+    margin-left: 0!important;
+    padding-left: 14%;
+  }
+
 
   .containerF{ 
     display: flex;
@@ -488,17 +779,76 @@ span.psw {
     flex-direction: column;
     text-align: center;
   }
+
   .row { 
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
   }
 
+  .navbar { 
+  margin-bottom: 0px;
+}
+.grid-container { 
+grid-template-columns: min-content;
+grid-template-rows: repeat(8, minmax(300px, auto));
+gap: 0; 
+}
 
-} 
+  .j1 { 
+    padding: 1rem;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    margin: auto;
+  }
+
+  .img1 { 
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    align-self: start;
+    margin-left: 0px;
+  }
+
+  .j2 { 
+    padding: 1rem;
+    grid-column: 1 / 3;
+    grid-row: 5 / 7;
+    align-self: start;
+    margin: 0;
+  }
+
+  #j2 { 
+    max-width: fit-content;
+    padding: 0;
+  }
+
+  .container-fluid { 
+    padding-bottom: 40px;
+  }
+
+#logoPNG { 
+  padding: 1rem;
+  grid-column: 1 / 3;
+  grid-row: 7 / 8;
+  align-self: end;
+  margin: auto;
+
+}
+
+#partners { 
+  grid-column: 1 / 3;
+  grid-row: 8 / 9;
+}
+
+}
 
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+
+
+
+
+
+@media screen and (max-width: 320px) {
   
 
   .navbar {   
