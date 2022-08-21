@@ -4,14 +4,16 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-* {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fefae0;
@@ -20,6 +22,15 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 
 @keyframes fadeInAnimation {
   0% {
@@ -33,8 +44,11 @@ body {
 /* Grid for whole site */
 .grid-container {
 display: grid;
+max-width: 2560px;
+margin-right: auto;
+margin-left: auto; 
 grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-grid-template-rows: repeat(8,320px);
+grid-template-rows: repeat(auto-fit,minmax(320px,1fr));
 gap: 5px;
 }
 
@@ -106,11 +120,9 @@ footer {
   }
 }
 header {  
-  /* This section calls the slideInFromLeft animation we defined above */
+  /* This section calls the slideInFromLeft animation we defined above  */
   animation: 2s ease-out 0s 1 slideInFromLeft;
 }
-body {font-family: "Segoe UI", Arial, Helvetica, Sans Serif;} 
-
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -320,17 +332,59 @@ span.psw {
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {    
+
+
+
+
+/* 
+@media screen and (min-width: 1200px)  {
+
   .navbar {   
-    min-width: 2561px;
+    width: 100%;
+    max-width: none;
+    min-width: 1200px;
   }
 
+  .nav-links { 
+    width: fit-content;
+    justify-content: end; 
+    min-width: 1200px;    
+  }
+
+
   .shippingBannerP { 
-    max-width: 2560px;
+    width: auto!important;
+    max-width:none;
+    grid-column-end: auto!important0; 
   }
 
   .footer { 
-    min-width: 1200px;
+    max-width: none;
+    min-width: 1200px; 
+  }
+
+  .row { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  } 
+
+} */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {    
+  .navbar {   
+    max-width: 1200px;
+    min-width: 992px;
+  }
+
+  .shippingBannerP { 
+    max-width: 1200px;
+    min-width: 992px;
+  }
+
+  .footer { 
+    max-width: 1200px;
+    min-width: 992px;
   }
 
   .row { 
@@ -343,27 +397,63 @@ span.psw {
 } 
 
 
-@media screen and (min-width: 600px) {
-  
-  .navbar{ 
-    max-width: 100%;
-  }
-  
-  
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
   .navbar {   
     width: 100%;
-    max-width: 2560px;
-    min-width: 601px;
+    max-width: 992px;
+    min-width: 768px;
   }
 
+  .nav-links { 
+    max-width: 992px; 
+    min-width: 768px;    
+  }
+
+
   .shippingBannerP { 
-    max-width: 2560px;
+    max-width: 992px;
   }
 
   .footer { 
-    width: 2560px
+    max-width: 992px;
+    min-width: 768px;
   }
 
+  .row { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+  .navbar {   
+    width: 100%;
+    max-width: 768px;
+    min-width: 601px;
+  }
+
+  .nav-links { 
+    max-width: 768px; 
+    min-width: 601px;    
+  }
+
+
+  .shippingBannerP { 
+    max-width: 768px;
+  }
+
+  .containerF{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
   .row { 
     display: flex;
     flex-wrap: wrap;
@@ -379,27 +469,62 @@ span.psw {
 
   .navbar {   
     max-width: 600px;
-    min-width: 836px;
+    /* min-width: px; */
   }
 
 
   .shippingBannerP { 
     max-width: 600px;
-    min-width: 836px;
+    /* min-width: px; */
   }
 
 
 
-  .footer { 
-    max-width: 600px;
-    min-width: 836px;
+  .containerF{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .row { 
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: column;
   }
 
+  .navbar { 
+  margin-bottom: 100px;
+}
+
+
+  .j1 { 
+    padding: 1rem;
+    height: 4rem;
+    grid-row-start: 3;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end:1;
+    align-self: center;
+    margin: 0;
+  }
+
+  .j2 { 
+    padding: 1rem;
+    height: 4rem;
+    grid-row-start: -2;
+    grid-row-end: -4;
+    grid-column-start: 1;
+    grid-column-end:1;
+    align-self: center;
+    margin: 0;
+  }
+
+  .img1 { 
+    padding: 1rem;
+    height: 4rem;
+  }
 
 }
 

@@ -39,28 +39,36 @@
 
   .navbar {
     background-color: #dda15e;
-    margin-right: auto;
-    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
-    left: 0;
-    top: 0;
     z-index: 100;
     box-shadow: 0px 3px 5px rgba(0 0 0 /10%);
     padding: 0;
+    width: 100%;
 }
 
-.navbar-nav { 
-  flex-direction: row;
+
+.navGrid { 
+  display: flex;
+  align-items: center;
 }
 
 .nav-links { 
-  display:flex;
-  flex-flow: row;
-  align-items: baseline;
-  float: right;
-  padding-top: 25px;
-  margin-right: 25px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 80rem;
 }
+
+.nav-item {
+  margin-left: 5rem;
+  text-align: right;
+}
+
+.nav-item:hover{
+  color: #482ff7;
+}
+
 
 .GIGA { 
   display: inline-block;
@@ -73,27 +81,26 @@
 
 .navbar-grid { 
   display: grid;
-  grid-template-columns: repeat(10, minmax(320px,1fr));
+  grid-template-columns: repeat(8, minmax(320px, 1fr ));
   grid-template-rows: auto auto auto;
 }
 
 
 .shippingBannerP { 
   background-color: black;
-  grid-column-start: 1;
-  grid-column-end: -3;
-  text-align: center;
-  width:auto;
+  width: 100%;
 }
 
-.navGrid { 
+
+/* .navGrid { 
   grid-column-start: 1;
-  grid-column-end: -3;
-}
+  grid-column-end:-3;
+} */
 
 
 #shippingBannerC { 
   color: #f1f1f1;
+  margin-left: 45%;
 }
 
 
@@ -102,4 +109,71 @@
   width: 100%;
   height: max-content;
   overflow: visible;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+
+
+
+
+/* Media Query */ 
+
+
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+      position: fixed;
+      left: -5%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 50%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+
 }
