@@ -48,28 +48,23 @@ max-width: 2560px;
 margin-right: auto;
 margin-left: auto; 
 grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-grid-template-rows: repeat(auto-fit,minmax(320px,1fr));
-gap: 5px;
+grid-template-rows: repeat(12, minmax(100px, auto));
+gap: 10px;
 }
 
 .j1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  grid-column: 1 / 3; 
+  grid-row: 3 / 4;
   align-self: start;
-  margin-left: 100px;
+  margin-left: 20px;
 }
 
 
 .j2 { 
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 5;
-  grid-row-end: 5;
-  align-self: start;
-  justify-self: end;
-  margin-left: 200px;
+  grid-column:3 / 6;
+  grid-row:  4 / 5;
+  margin-top: 20px;
+  margin-left: 38px;
 }
 
 #j2{ 
@@ -79,12 +74,10 @@ gap: 5px;
 }
 
 .img1 { 
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 5;
-  justify-self: end;
-  margin-right: 200px;
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+  justify-self: center;
+  margin-left: 12px;
 }
 
 /*footer*/
@@ -136,7 +129,6 @@ img {
 #shoppingcart { 
   max-width: 90%;
   height: auto;
-  position: relative;
 }
 
 
@@ -468,16 +460,20 @@ span.psw {
   
 
   .navbar {   
-    max-width: 600px;
+    width: 100%;
     /* min-width: px; */
   }
 
 
   .shippingBannerP { 
-    max-width: 600px;
+    width: 100%;
     /* min-width: px; */
   }
 
+  #shippingBannerC { 
+    margin-left: 0!important;
+    padding-left: 8%;
+  }
 
 
   .containerF{ 
@@ -497,34 +493,46 @@ span.psw {
   .navbar { 
   margin-bottom: 100px;
 }
-
+.grid-container { 
+grid-template-columns: min-content;
+grid-template-rows: repeat(50, minmax(300px, auto));
+gap: 0; 
+}
 
   .j1 { 
     padding: 1rem;
-    height: 4rem;
-    grid-row-start: 3;
-    grid-row-end: -1;
-    grid-column-start: 1;
-    grid-column-end:1;
-    align-self: center;
-    margin: 0;
+    grid-column: 1 / 1;
+    grid-row: 2 / 4;
+    align-self: start;
+    margin: auto;
+  }
+
+  .img1 { 
+    
+    grid-column: 1 / 1;
+    grid-row: 4 / 6;
+    align-self: start;
+    margin-left: 0px;
   }
 
   .j2 { 
     padding: 1rem;
-    height: 4rem;
-    grid-row-start: -2;
-    grid-row-end: -4;
-    grid-column-start: 1;
-    grid-column-end:1;
-    align-self: center;
-    margin: 0;
+    grid-column: 1 / 1;
+    grid-row: 5 / 7;
+    align-self: end;
+    margin: auto;
   }
 
-  .img1 { 
-    padding: 1rem;
-    height: 4rem;
+  #j2 { 
+    max-width: fit-content;
+    padding: 0;
   }
+
+  .container-fluid { 
+    padding-bottom: 40px;
+  }
+
+
 
 }
 
