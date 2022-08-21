@@ -8,8 +8,11 @@ scrollNavbar = () => {
     const navBar = document.getElementById("navBar");
     const links = document.querySelectorAll("#navBar a");
 
+
+
 if (document.documentElement.scrollTop > 100) {
     navBar.classList.add("pa-fixed-header");
+
 
 
     for (let i = 0; i < links.length; i++) {

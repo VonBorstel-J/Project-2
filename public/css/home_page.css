@@ -48,7 +48,7 @@ max-width: 2560px;
 margin-right: auto;
 margin-left: auto; 
 grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-grid-template-rows: repeat(12, minmax(100px, auto));
+grid-template-rows: repeat(10, minmax(100px, auto));
 gap: 10px;
 }
 
@@ -121,7 +121,7 @@ gap: 10px;
 /*footer*/
 
 footer { 
-  margin-top: 300px;
+  margin-top: 60px;
   width: 100%;
   background-color: #dda15e!important;
 }
@@ -244,7 +244,7 @@ button:hover {
   overflow: auto;
   /* Enable scroll if needed */
   background-color: #474e5d;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 /* Modal Content/Box */
@@ -498,7 +498,7 @@ span.psw {
 } 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
   
 
   .navbar {   
@@ -537,7 +537,7 @@ span.psw {
 }
 .grid-container { 
 grid-template-columns: min-content;
-grid-template-rows: repeat(50, minmax(300px, auto));
+grid-template-rows: repeat(8, minmax(300px, auto));
 gap: 0; 
 }
 
