@@ -1,0 +1,23 @@
+
+
+
+#productsH1 { 
+    grid-row: 3;
+}
+
+/* Carousel Stylings */ 
+
+#productsGrid { 
+    justify-items: center;
+}
+
+
+#carouselVideo {
+
+    grid-row: 4;
+}
+
+.carousel {
+    width: 70%;
+    height:auto;
+}

@@ -1,16 +1,25 @@
 const express = require('express');
-const path = require('path'); 
-const routes = require('../routes/index');
+const path = require('path');
+const routes = require('/Users/Jorda/Desktop/BackEnd Westcliff/Project 2/routes/index');
 const bodyParser = require('body-parser');
-
-const app = express(); 
-
-app.set('views', path.join(__dirname, 'views')); 
+const expressSession = require('express-session')({
+	secret: 'secret',
+	resave: false,
+	saveUninitialized: false,
+	cookie: {
+		secure: false,
+		maxAge: 60000
+	}
+});
+const app = express();
+app.use(express.static('public'));
+app.set('views', path.join(__dirname, 'views'));
+app.use("/public",express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'pug');
-
-app.use(bodyParser.urlencoded({ extended: true}));
-app.use('/', routes); 
-
-module.exports = app; 
-
-app.use(express.static('public')); 
+app.use(bodyParser.urlencoded({
+	extended: true
+}));
+app.use(bodyParser.json());
+app.use(expressSession);
+app.use('/', routes);
+module.exports = app;
