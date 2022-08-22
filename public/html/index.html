@@ -27,7 +27,7 @@
 			<a href="#" class="GIGA"> <img src="/public/img/img_avatar.png" alt="Avatar Logo" style="width: 50px;height: 50px;" class="rounded-circle z-depth-6"> GIGACOMMERCE</a>
 			<ul class="nav-links">
 				<li class="nav-item"> <a class="nav-link" aria-current="page" href="/public/html/index.html">Home</a> </li>
-				<li class="nav-item"> <a class="nav-link" href="/public/html/Product.html" rel="nofollow" target="_blank">Products</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="/public/html/Product.html">Products</a> </li>
 				<li class="nav-item"> <a href="/public/html/Contact.html" class="nav-link">Contact Us</a> </li>
 			</ul>
 			<div class="hamburger" id="hamburger"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </div>
@@ -51,7 +51,7 @@
 						<div id="btn1">
 							<button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary btn-lg mr-4" style="width:auto;">Sign Up</button>
 							<div id="id01" class="modal" tabindex="-1"> <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-								<form class="modal-content animate" action="/action_page.php">
+								<form class="modal-content animate" action="/sign_up" method="post">
 									<div class="container">
 										<h1 style="color:black;">Sign Up</h1>
 										<p style="color:black;">Please fill in this form to create an account.</p>
@@ -75,7 +75,7 @@
 							<!------Modal for btn2 ---------->
 							<button onclick="document.getElementById('id02').style.display='block'" class="btn btn-primary btn-lg" style="width:auto;">Login</button>
 							<div id="id02" class="modal" tabindex="-1"> <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-								<form class="modal-content animate" action="/action_page.php" method="post">
+								<form class="modal-content animate" action="/login" method="post">
 									<div class="imgcontainer"> <img src="/public/img/img_avatar.png" alt="Avatar" class="avatar img-responsive" style="max-height:500px; max-width: 400px;"> </div>
 									<div class="container">
 										<label for="uname"> <b>Username</b> </label>
@@ -103,7 +103,7 @@
 					<div class="container-fluid ">
 						<h1 id="signU" class="display-1">Lorem Ipsum</h1>
 						<p class="lead">Lorem, eniam doloribus animi aliquid. Consectetur quas autem nulla dolore accusantium maiores at dicta quos eaque nemo, voluptate in. ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur ad odio harum, id, reprehenderit similique ipsum maiores inventore tempora adipisci soluta, nemo accusamus est natus! Velit sit magni est.</p>
-						<hr class="my-3"> <a href="url" style="font-size:25px;">Learn More</a> <i class="fa-solid fa-arrow-right fa-lg" style="padding-left: 10px ;"></i> </div>
+						<hr class="my-3"> <a href="url" style="font-size:25px;">Learn More</a> </div>
 				</div>
 			</section>
 			<picture id="logoPNG"> <img src="/public/img/logo.png" class="rounded img-fluid mx-auto" id="imgLogoPNG"> </picture>

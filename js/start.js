@@ -1,12 +1,24 @@
+require('dotenv').config();
+const mongoose = require('mongoose');
+const passportLocalMongoose = require('passport-local-mongoose');
 
-require('./initDB')(); // This will call the mongodb file connecting the project to mongo
+mongoose.connect(process.env.DATABASE, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
-require('../models/Registration');   //This will call to the schema needed to fill our database will the user information from the sign up / login buttons
-const app = require('./app.js');               
+mongoose.connection
+  .on('open', () => {
+    console.log('Mongoose connection open');
+  })
+  .on('error', (err) => {
+    console.log(`Connection error: ${err.message}`);
+  });
 
-const server = app.listen(3000, () => {  
-    console.log(`Express is running on port ${server.address().port}`);                 // This will set the server to https://localhost:3000 
-}); 
+require('./models/Registration');
+const app = require('./app');
 
-const morgan = require('morgan');
-app.use(morgan('tiny'));
+
+const server = app.listen(3000, () => {
+  console.log(`Express is running on port ${server.address().port}`);
+});
