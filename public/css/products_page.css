@@ -49,6 +49,23 @@ grid-row: 5;
     margin-bottom: 40px;
 }
 
+
+.relatedP { 
+    width: 100%;
+    display: flex;
+    grid-row: 8;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card{ 
+    position: relative;
+    width: auto;
+    height: 400px;
+
+}
+
+
 /* Carousel Stylings */ 
 
 #productsGrid { 
